@@ -1,6 +1,5 @@
-# Weather Data Analysis (1990-2020)
+# Big Weather Data Analysis (1990-2020)
 
-![Weather Data Visualization](https://via.placeholder.com/800x400.png?text=Weather+Data+Visualization)
 
 ## Overview
 This project analyzes 30 years of meteorological data (1990-2020) containing 245,088 observations across 16 variables. Using Apache Spark in a Colab environment, I performed comprehensive data cleaning, null value imputation, and visualization to reveal long-term weather patterns and trends.
@@ -51,6 +50,13 @@ Three key figures were developed to illustrate the insights derived from the dat
      - The years **1992** and **1996** recorded the lowest average temperatures.
      - The highest average temperature was observed in **2008**.
 
+<div align="center">  
+<img src="images/temperature_trends.png" width="800"/>  
+ <p>
+  <i>Figure-1:</i> Average Temperature per Year
+ </p>
+</div>  
+
 2. **Figure 2: Winter Temperature Analysis**
    - **Description:**  
      Combines a blue bar graph showing the average winter temperature with a black line graph indicating the minimum and maximum winter temperatures for each year.
@@ -58,9 +64,24 @@ Three key figures were developed to illustrate the insights derived from the dat
      - **1996** emerges as the coldest winter.
      - **2018** exhibits the highest fluctuation in winter temperatures.
 
+<div align="center">  
+<img src="images/temperature_seasonal.png" width="800"/>  
+ <p>
+  <i>Figure-2:</i> Winter Temperature Analysis
+ </p>
+</div>  
+
 3. **Figure 3: Monthly Weather Variable Box Plots**
    - **Description:**  
      Box plots display the distribution (average, minimum, maximum, and quartile values) for key weather variables (air temperature, precipitation, wind speed, wet-bulb temperature, dew point, and vapor pressure) on a monthly basis over the 30-year period.
+
+<div align="center">  
+<img src="images/monthly_boxplots.png" width="900"/>  
+ <p>
+  <i>Figure-3:</i> Monthly Weather Variable Box Plots
+ </p>
+</div>  
+
    - **Key Insights:**  
      - Temperature variables show a steady increase from January to August followed by a gradual decrease.
      - Precipitation remains relatively constant throughout the year.
